@@ -12,10 +12,12 @@ h3. 1) download new web files
 
 *as zip file:*
 
-* "download .zip file":http://github.com/seaofclouds/indigo-mini-view-plugin/zipball/master
-* expand download into 
-  <pre>cd /Library/"Application Support"/"Perceptive Automation"/"Indigo 2"/IndigoWebServer/plugins/</pre>
+* "download the .zip file":http://github.com/seaofclouds/indigo-mini-view-plugin/zipball/master
+* expand download
 * rename expanded directory to: "m"
+* move "m" to 
+  <pre>/Library/Application Support/Perceptive Automation/"Indigo 2/IndigoWebServer/plugins/m</pre>
+* 
 
 *or using git:*
 * In Terminal.app:
@@ -30,7 +32,6 @@ visit:
 h3. 3) control your home
 
 visit: "http://your_server_ip_address:8176/m":http://your_server_ip_address:8176/m
-
 
 h2. customization
 

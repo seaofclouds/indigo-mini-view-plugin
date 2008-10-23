@@ -1,4 +1,4 @@
-h3{font-weight:normal}. born from the need for quick loads and simplicity - especially on an iphone. these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs in the form of a plugin!
+h3{font-weight:normal !important;}. born from the need for quick loads and simplicity - especially on an iphone. these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs in the form of a plugin!
 
 h2. example
 
@@ -17,7 +17,6 @@ h4. as zip file:
 * rename expanded directory to: "m"
 * move "m" to 
   <pre>/Library/Application Support/Perceptive Automation/"Indigo 2/IndigoWebServer/plugins/m</pre>
-* 
 
 h4. or using git:
 

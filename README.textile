@@ -1,4 +1,4 @@
-born from the need for quick loads and simplicity - especially on an iphone. these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs in the form of a plugin!
+h3{font-weight:normal}. born from the need for quick loads and simplicity - especially on an iphone. these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs in the form of a plugin!
 
 h2. example
 
@@ -10,7 +10,7 @@ h2. installation
 
 h3. 1) download new web files
 
-*as zip file:*
+h4. as zip file:
 
 * "download the .zip file":http://github.com/seaofclouds/indigo-mini-view-plugin/zipball/master
 * expand download
@@ -19,10 +19,13 @@ h3. 1) download new web files
   <pre>/Library/Application Support/Perceptive Automation/"Indigo 2/IndigoWebServer/plugins/m</pre>
 * 
 
-*or using git:*
-* In Terminal.app:
-  <pre>cd /Library/"Application Support"/"Perceptive Automation"/"Indigo 2"/IndigoWebServer/plugins</pre>
-* <pre>git clone git://github.com/seaofclouds/indigo-mini-view-plugin.git m</pre>
+h4. or using git:
+
+In Terminal.app:
+
+<pre>cd /Library/"Application Support"/"Perceptive Automation"/"Indigo 2"/IndigoWebServer/plugins</pre>
+
+<pre>git clone git://github.com/seaofclouds/indigo-mini-view-plugin.git m</pre>
 
 h3. 2) restart indigo server
 

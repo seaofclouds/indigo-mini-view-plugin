@@ -1,0 +1,73 @@
+<div id="deviceTable" class="section devicelist_section">
+
+#set $cellColorClass = u'darkRowBg'
+#for $dev in $devList
+  #if not $dev.hasStateToDisplay or not $dev.displayInUI
+    #continue
+  #end if
+  #if $cellColorClass == u'darkRowBg'
+    #set $cellColorClass = u'lightRowBg'
+  #else
+    #set $cellColorClass = u'darkRowBg'
+  #end if
+  #if $dev.typeSupportsDim
+  <div class="item options">
+  #else
+  <div class="item">
+  #end if
+    <h3 class="name">
+      #if $dev.typeSupportsOnOff
+        #if $dev.isOn
+          <a class="button on" href="turnoff?device=${dev.name, entityEncoding='URL'}">
+            #if $dev.typeSupportsDim
+              $dev.brightness%
+            #else
+              On
+            #end if
+          </a>
+        #else
+        <a class="button off" href="turnon?device=${dev.name, entityEncoding='URL'}">Off</a>
+        #end if
+      #end if
+      $dev.name
+    </h3>
+    
+  #if $dev.typeSupportsSprinkler
+    <h4 class="sprinkler deviceControl $cellColorClass">
+      #if $dev.activeZone > 0:
+        <span class="on deviceStateOn">
+          zone${dev.activeZone}
+        </span>
+      #else
+        <span class="off deviceStateOff">
+          Off
+        </span>
+      #end if
+    </h4>
+    
+  #else if $dev.typeSupportsHVAC
+    <h4 class="hvac deviceControl $cellColorClass">
+      <span class="deviceStateOff">
+        ${dev.inputTemperatureVals}
+      </span>
+    </h4>
+      
+  #else if $dev.typeSupportsIO
+      <h4 class="io deviceControl $cellColorClass">
+        <span class="on deviceStateOn">
+          ${dev.outputBinaryStates}
+        </span>
+      </h4>
+      
+  #else if $dev.typeSupportsDim
+      <h4 class="dimmer deviceControl $cellColorClass">
+        <a class="button dim30" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=30">30</a>
+        <a class="button dim50" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=50">50</a>
+        <a class="button dim70" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=70">70</a>
+        <a class="button on dim100" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=100">100%</a>
+      </h4>
+  #end if
+  <div class="clear"></div>
+  </div>
+#end for
+</div>

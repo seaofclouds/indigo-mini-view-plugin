@@ -1,0 +1,27 @@
+* {
+  font-size:8.5pt !important; 
+}
+h4.dimmer a.button {
+  font-size:90% !important;
+}
+.status {
+  font-size:80% !important;
+}
+h3 {
+  font-size: 130% !important;
+}
+h3 a.button {
+  font-size: 90% !important;
+}
+h2 {
+  font-size:140% !important;
+}
+h2 a{
+  font-size:100% !important;
+}
+h2 a.toggle {
+font-size: 50% !important;
+}
+body#redirect #serverstatus {
+  font-size:110% !important;
+}

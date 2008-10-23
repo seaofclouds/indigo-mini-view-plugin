@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Indigo Home Control Server</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="screen" type="text/css" href="/m/css/mini.css" />
+    <script src="indigoutil" type="text/javascript"></script>
+    #if $iphone
+      <meta content='width = 320, initial-scale = 1.0' name='viewport' />
+      <link href='/m/images/icon-touch-grey.png' rel='apple-touch-icon' />
+    #end if
+    <script type="text/javascript" charset="utf-8">
+      #if $iphone
+        window.onload = function() {
+          setTimeout(function(){window.scrollTo(0, 1);}, 100);
+        }
+      #end if
+      function toggle(obj) {
+        var el = document.getElementById(obj);
+        el.style.display = (el.style.display != 'none' ? 'none' : '' );
+      }
+    </script>
+  </head>
+  <body>
+    <a name="top"></a>
+    #include "plugins/m/templates/_devicelist_mini.html"
+    
+    <div class="footer">
+      <p class="fl">
+      <a href="/">&laquo; main page</a> / 
+      <a class="restart" href="/indigocommand?name=restart">restart</a>
+      </p>
+      <a class="fr" href="#top">back to top</a>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

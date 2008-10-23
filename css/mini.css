@@ -1,0 +1,124 @@
+* {
+  margin:0;
+  padding:0;
+  font-size:11pt;
+  line-height:2em;
+}
+body {
+  background-color:#222;
+  color:#fff;
+  font-family:arial, sans-serif;
+  padding:1em;
+}
+.clear {
+  clear:both;
+}
+a {
+  color:#fff;
+  text-decoration:none;
+}
+a.button {
+  background-color:#777;
+  padding:1em;
+  float:left;
+  display:block;
+  margin-right:.5em;
+    -moz-border-radius: .5em;
+    -webkit-border-radius: .5em;
+}
+a.on {
+  background-color:green;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+h4.dimmer {
+  padding-left:4em;
+  padding-top:.5em;
+}
+h4.dimmer a.button {
+  padding:0;
+  padding-right:1em;
+  padding-left:1em;
+  margin-right:.5em;
+  font-size:90%;
+}
+a.dim100 {
+  background-color:#999;
+}
+a.dim70 {
+  background-color:#888;
+}
+a.dim50{
+  background-color:#666;
+}
+a.dim30 {
+  background-color:#444;
+}
+a.off {
+  background-color:red;
+}
+
+.status {
+  color:#ddd;
+  font-weight:normal;
+  font-size:80%;
+}
+.item {
+  padding-top:1em;
+}
+h3 {
+  font-size: 130%;
+  line-height:3.2em;
+}
+h3 a.button {
+  line-height:1.5em;
+  font-size: 90%;
+  width: 2.5em;
+  text-align:center
+}
+.options h3 {
+  line-height:1.2em;
+}
+h3.action a.button{
+  width:auto;
+  padding:.5em;
+}
+
+h2 {
+  font-size:140%;
+}
+h2 a{
+  font-size:100%;
+}
+h2 a.toggle {
+padding:.3em;
+background-color: #333;
+color:#ccc;
+font-size: 50%;
+font-weight:normal;
+}
+
+.section {
+  padding-bottom: 2em;
+}
+.variablelist_section h4 {
+  padding:0;
+}
+body#redirect {
+  text-align:center;
+  padding:3em;
+}
+body#redirect #serverstatus {
+  text-align:left;
+  margin:0 auto;
+  padding:1em;
+  font-size:110%;
+  background-color: #777;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+  font-weight:bold;
+}

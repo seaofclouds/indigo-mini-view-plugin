@@ -57,9 +57,9 @@ i added three replacement icons, green, blue and grey, with grey being the defau
 
 <pre><link href='/m/images/icon-touch-blue.png' rel='apple-touch-icon' /></pre>
 
-if you want the indgigo default icon back, change that same line to:
+if you want the indigo default icon back, change that same line to:
 
-<pre><link href='apple-touch-icon.png' rel='apple-touch-icon' /></pre>
+<pre><link href='/apple-touch-icon.png' rel='apple-touch-icon' /></pre>
 
 h2. uninstalling
 
@@ -69,5 +69,5 @@ h2. contribute
 
 *"comments and discussion":http://www.perceptiveautomation.com/phpBB2/viewtopic.php?p=20129*  can be tracked in the perceptive automation forums. or, just send a message through github.
 
-the best way to contribute code changes is right here on github. fork the code and send us a pull request with your improvements and we'll see about merging your changes in. obviously, you'll need git, html, python and possibly javascript skills to do any of that.
+the best way to contribute code changes is right here on github. fork this repository and send us a pull request with your improvements and we'll see about merging your changes in. obviously, you'll need git, html, python and possibly javascript skills to do any of that.
 

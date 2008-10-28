@@ -31,7 +31,7 @@ from indigopy.basereqhandler import BaseRequestHandler, kTrueStr, kFalseStr, kEm
 ####################
 # Optional hooks to provide a plugin name and description (shown in Event Log and plugin index)
 def PluginName():
-	return u"SeaOfClouds Plugin"
+	return u"Mini View by seaofclouds"
 
 def ShowOnControlPageList():
 	return True		# if True, then above name/description is shown on the Control Page list index

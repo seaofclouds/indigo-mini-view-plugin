@@ -1,37 +1,28 @@
-	<table id="variableTable" width="280px">
-		<tr class="tablename">
-			<td colspan="2">Variables</td> 
-		</tr>
-		<tr class="header">	
-			<td>Variable Name</td>
-			<td>Value</td>
-		</tr>
-#set $cellColorClass = u'darkRowBg'
-#for $variable in $variableList
-  #if $cellColorClass == u'darkRowBg'
-    #set $cellColorClass = u'lightRowBg'
-  #else
-    #set $cellColorClass = u'darkRowBg'
-  #end if
-		<tr>
-			<td class="variableName">
-				<div class="$cellColorClass">
-					$variable.name
-				</div>
-			</td>
-  #if $variable.isFalse
-			<td class="variableValueFalse">
-  #else
-			<td class="variableValueNotFalse">
-  #end if
-				<div class="$cellColorClass">
-  #if $variable.value
-					$variable.value
-  #else
-					&nbsp;
-  #end if
-				</div>
-			</td>
-		</tr>
-#end for
-	</table>
+<div class="variablelist_section section">
+  <h2><a href="javascript:toggle('variablelist_toggle')">variables</a> <a class="toggle" href="javascript:toggle('variablelist_toggle')">show</a></h2>
+  <div id="variablelist_toggle" style="display:none">
+  #set $cellColorClass = u'darkRowBg'
+  #for $variable in $variableList
+    #if $cellColorClass == u'darkRowBg'
+      #set $cellColorClass = u'lightRowBg'
+    #else
+      #set $cellColorClass = u'darkRowBg'
+    #end if
+      <h4 class="$cellColorClass item">
+        <span class="variableName">
+          $variable.name
+        </span>
+ 
+        #if $variable.isFalse
+          <span class="variableValueFalse status">
+        #else
+          <span class="variableValueNotFalse status">
+        #end if
+        #if $variable.value
+          $variable.value
+        #end if
+        </span>
+      </h4>
+  #end for
+  </div>
+</div>

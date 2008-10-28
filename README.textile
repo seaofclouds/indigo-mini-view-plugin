@@ -1,4 +1,4 @@
-h3{font-weight:normal !important;}. born from the need for quick loads and simplicity - especially on an iphone. these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs in the form of a plugin!
+h3{font-weight:normal !important;}. born from the need for quick loads and simplicity - especially on an iphone. these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs!
 
 h2. example
 
@@ -28,12 +28,13 @@ In Terminal.app:
 
 h3. 2) restart indigo server
 
-visit: 
+* visit: 
 "http://your_server_ip_address:8176/indigocommand?name=restart":http://your_server_ip_address:8176/indigocommand?name=restart
+* wait a minute...
 
 h3. 3) control your home
 
-visit: "http://your_server_ip_address:8176/m":http://your_server_ip_address:8176/m
+8 visit: "http://your_server_ip_address:8176/m":http://your_server_ip_address:8176/m
 
 h2. customization
 

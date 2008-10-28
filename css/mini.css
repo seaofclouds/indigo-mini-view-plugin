@@ -23,6 +23,7 @@ a.button {
   float:left;
   display:block;
   margin-right:.5em;
+  margin-bottom: .5em;
     -moz-border-radius: .5em;
     -webkit-border-radius: .5em;
 }

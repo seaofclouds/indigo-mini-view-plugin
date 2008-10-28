@@ -61,10 +61,12 @@ class ExampleRequestHandler(BaseRequestHandler):
 		BaseRequestHandler.__init__(self, logFunc, debugLogFunc)
 
 	def index(self):
-		tmpl = self._GetAndLockPluginTemplate('m/templates/main.html')
+		tmpl = self._GetAndLockPluginTemplate('m/index.html')
 		try:
 			tmpl.iphone = self._IsiPhone()
 			tmpl.devList = cherrypy.server.indigoDb.GetDevices(cherrypy.server.indigoConn, True)
+                        tmpl.actionGroupList = cherrypy.server.indigoDb.GetActionGroups(cherrypy.server.indigoConn, True, True)
+                        tmpl.variableList = cherrypy.server.indigoDb.GetVariables(cherrypy.server.indigoConn, True)
 			return tmpl.RenderTemplate()
 		finally:
 			tmpl.ReleaseLock();
@@ -120,9 +122,25 @@ class ExampleRequestHandler(BaseRequestHandler):
                 return self.returnResult(serverStatus)
         setbrightness.exposed = True
 
+        def executegroup(self, group):
+                self._ForceHeadersToNeverCache()
+
+                pageType = kTextPageStr
+                try:
+                        cherrypy.server.indigoDb.GroupExecute(cherrypy.server.indigoConn, group, cherrypy.request.remote.ip)
+                except (ic.ConnError, ic.InternalError, ic.ServerError), err:
+                        return self._ReturnError(pageType, err.value)
+                except idb.ControlDisabled:
+                        return self._ReturnControlDisabled(pageType)
+                serverStatus = u'executing "'
+                serverStatus += group
+                serverStatus += u'"'
+                return self.returnResult(serverStatus)
+        executegroup.exposed = True
+
         def returnResult(self, serverStatus):
 		cherrypy.response.headers['Content-Type'] = 'text/html'
-                tmpl = self._GetAndLockPluginTemplate('m/templates/reload.html')
+                tmpl = self._GetAndLockPluginTemplate('m/reload.html')
                 try:
                 	tmpl.iphone = self._IsiPhone()
                         tmpl.serverStatus = serverStatus

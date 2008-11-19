@@ -18,7 +18,7 @@
     <h3 class="name">
       #if $dev.typeSupportsOnOff
         #if $dev.isOn
-          <a class="button on" href="turnoff?device=${dev.name, entityEncoding='URL'}">
+          <a id="Btn$dev.name" class="button on" href="javascript:SwitchLights('$dev.name',0);">
             #if $dev.typeSupportsDim
               $dev.brightness%
             #else
@@ -26,7 +26,7 @@
             #end if
           </a>
         #else
-        <a class="button off" href="turnon?device=${dev.name, entityEncoding='URL'}">Off</a>
+        <a id="Btn$dev.name" class="button off" href="javascript:SwitchLights('$dev.name',1);">Off</a>
         #end if
       #end if
       $dev.name
@@ -61,10 +61,10 @@
       
   #else if $dev.typeSupportsDim
       <h4 class="dimmer deviceControl $cellColorClass">
-        <a class="button dim30" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=30">30</a>
-        <a class="button dim50" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=50">50</a>
-        <a class="button dim70" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=70">70</a>
-        <a class="button on dim100" href="setbrightness?device=${dev.name, entityEncoding='URL'}&level=100">100%</a>
+        <a class="button dim30" href="javascript:DimLights('$dev.name',30);">30</a>
+        <a class="button dim50" href="javascript:DimLights('$dev.name',50);">50</a>
+        <a class="button dim70" href="javascript:DimLights('$dev.name',70);">70</a>
+        <a class="button on dim100" href="javascript:DimLights('$dev.name',100);">100%</a>
       </h4>
   #end if
   <div class="clear"></div>

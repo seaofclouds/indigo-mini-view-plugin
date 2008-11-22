@@ -8,7 +8,6 @@ body {
   background-color:#222;
   color:#fff;
   font-family:arial, sans-serif;
-  padding:1em;
 }
 .clear {
   clear:both;
@@ -19,22 +18,59 @@ a {
 }
 a.button {
   background-color:#777;
+  border: 1px solid #000;
   padding:1em;
   float:left;
   display:block;
   margin-right:.5em;
   margin-bottom: .5em;
-    -moz-border-radius: .5em;
-    -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
 }
 a.on {
   background-color:green;
 }
+#header, #footer {
+  overflow: auto;
+  background-color: #333;
+}
+#header {
+  border-bottom: 1px solid #000;
+}
+p.contribute {
+  text-align: center;
+  font-size: 75%;
+  color: #444;
+  line-height: 1.3em;
+  padding-bottom: 1em;
+}
+p.contribute a {
+  color: #444;
+}
+#footer {
+  border-top: 1px solid #444;
+}
+#header a, #footer a {
+  display: block;
+  padding: .5em;
+  float: left;
+  line-height: .9em;
+  background-color: #333;
+  border-left: 1px solid #555;
+  border-right: 1px solid #222;
+}
+#header a:hover, #footer a:hover {
+  background-color: #444;
+}
 .fl {
   float:left;
 }
-.fr {
+.fr, #footer a.fr {
   float:right;
+}
+ 
+#content {
+  padding:0 1em 1em 1em;
 }
 h4.dimmer {
   padding-left:4em;
@@ -42,8 +78,8 @@ h4.dimmer {
 }
 h4.dimmer a.button {
   padding:0;
-  padding-right:1em;
-  padding-left:1em;
+  padding-right:.9em;
+  padding-left:.9em;
   margin-right:.5em;
   font-size:90%;
 }
@@ -96,11 +132,11 @@ h2 a{
   font-size:100%;
 }
 h2 a.toggle {
-padding:.3em;
-background-color: #333;
-color:#ccc;
-font-size: 50%;
-font-weight:normal;
+  float: none;
+  display: inline;
+  padding: .4em;
+  font-size: 70%;
+  background-color: #555;
 }
 
 .section {

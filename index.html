@@ -7,6 +7,7 @@
     <link rel="icon" href="/m/images/icon-favicon-grey.png" type="image/png">
     <link rel="icon" href="/m/images/icon-favicon-grey.ico" type="image/x-icon">
     #if $iphone
+      <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta content='width = 320, initial-scale = 1.0' name='viewport' />
       <link href='/m/images/icon-touch-grey.png' rel='apple-touch-icon' />
     #end if
@@ -50,17 +51,26 @@
     
   </head>
   <body>
-    <a name="top"></a>
-    <p><a href="/">&laquo; main page</a></p>
-    #include "plugins/m/_deviceList.html"
-    #include "plugins/m/_actiongroupList.html"    
-    #include "plugins/m/_variableList.html"
-    <div class="footer">
-      <p class="fl">
-      <a href="/">&laquo; main page</a> / 
-      <a class="restart" href="/indigocommand?name=restart">restart</a>
-      </p>
-      <a class="fr" href="#top">back to top ^</a>
+    <a name="header"></a>
+    <div id="header">
+      <a href="/" class="mainpage">&laquo; main page</a>
+    </div>
+    <div id="content">
+      #include "plugins/m/_deviceList.html"
+      #include "plugins/m/_actiongroupList.html"    
+      #include "plugins/m/_variableList.html"
+    </div>
+    <p class="contribute"><a href="http://github.com/seaofclouds/indigo-mini-view-plugin/">contribute on github</a></p>
+    
+    <div id="footer">
+      <div class="fl">
+        <a href="/" class="mainpage">&laquo; main page</a>
+        <a class="restart" href="/indigocommand?name=restart">restart</a>
+        <div class="clear"></div>
+      </div>
+      #unless $iphone
+        <a class="fr backtotop" href="#header">back to top</a>
+      #end unless
       <div class="clear"></div>
     </div>
     <iframe name="ifAction" id="ifAction" style="display:none"/>

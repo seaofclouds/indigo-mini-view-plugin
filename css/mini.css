@@ -121,8 +121,9 @@ h3 a.button {
   line-height:1.2em;
 }
 h3.action a.button{
-  width:auto;
+  width:7em;
   padding:.5em;
+  overflow: hidden;
 }
 
 h2 {

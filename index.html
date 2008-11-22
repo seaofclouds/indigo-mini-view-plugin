@@ -20,37 +20,32 @@
         var el = document.getElementById(obj);
         el.style.display = (el.style.display != 'none' ? 'none' : '' );
       }
-    </script>
-
-    <script type="text/javascript" charset="utf-8">
-		function SwitchLights(devname,State) {
-			if (State>0) 
-			{
-				document.getElementById('ifAction').src = "turnon?device=" + devname;
-				document.getElementById('Btn'+devname).className = "button on";
-				document.getElementById('Btn'+devname).innerText = 'On';
-				document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',0)";
-			} else {
-				document.getElementById('ifAction').src = "turnoff?device=" + devname;
-				document.getElementById('Btn'+devname).className = "button off"
-				document.getElementById('Btn'+devname).innerText = 'Off';
-				document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',1)";
-				}
-			}
-		function DimLights(devname,Level) {
-			if (Level>0) 
-			{
-				document.getElementById('ifAction').src = "setbrightness?device=" + devname + "&level=" + Level;
-				document.getElementById('Btn'+devname).className = "button on";
-				document.getElementById('Btn'+devname).innerText = Level + '%';
-				document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',0)";
-			} else {
-				document.getElementById('ifAction').src = "turnoff?device=" + devname;
-				document.getElementById('Btn'+devname).className = "button off"
-				document.getElementById('Btn'+devname).innerText = 'Off';
-				document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',1)";
-				}
-			}
+      function SwitchLights(devname,State) {
+        if (State>0) {
+          document.getElementById('ifAction').src = "turnon?device=" + devname;
+          document.getElementById('Btn'+devname).className = "button on";
+          document.getElementById('Btn'+devname).innerText = 'On';
+          document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',0)";
+        } else {
+          document.getElementById('ifAction').src = "turnoff?device=" + devname;
+          document.getElementById('Btn'+devname).className = "button off"
+          document.getElementById('Btn'+devname).innerText = 'Off';
+          document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',1)";
+        }
+      }
+      function DimLights(devname,Level) {
+        if (Level>0) {
+          document.getElementById('ifAction').src = "setbrightness?device=" + devname + "&level=" + Level;
+          document.getElementById('Btn'+devname).className = "button on";
+          document.getElementById('Btn'+devname).innerText = Level + '%';
+          document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',0)";
+        } else {
+          document.getElementById('ifAction').src = "turnoff?device=" + devname;
+          document.getElementById('Btn'+devname).className = "button off"
+          document.getElementById('Btn'+devname).innerText = 'Off';
+          document.getElementById('Btn'+devname).href="javascript:SwitchLights('" + devname + "',1)";
+        }
+      }
     </script>
     
   </head>

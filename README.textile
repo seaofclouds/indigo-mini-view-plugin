@@ -4,7 +4,7 @@ h2. example
 
 h4{float:left}. !http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg!<br />iphone view
 
-h4{float:left}. !http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!<br />desktop app
+h4{float:left}. !http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!<br />fluid desktop app
 
 h2{clear:all}. installation
 

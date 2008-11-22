@@ -2,15 +2,11 @@ h3{font-weight:normal !important;}. born from the need for quick loads and simpl
 
 h2. example
 
-<div style="float:left !important;width:330px !important">
-!http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg!<br />iphone view
-</div>
+|_. *iphone view* |_. *fluid desktop app* |
+| !http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg! | 
+!http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png! |
 
-<div style="float:left !important;width:330px !important">
-!http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!<br />fluid desktop app 
-</div>
-
-h2{clear:all}. installation
+h2. installation
 
 h3. 1) download new web files
 

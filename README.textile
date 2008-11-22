@@ -1,18 +1,18 @@
-h3{font-weight:normal !important;}. born from the need for quick loads and simplicity - especially on an iphone. these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs!
+h3{font-weight:normal !important;}. born from the need for quick loads and simplicity, these are replacement views for "indigo":http://www.perceptiveautomation.com/indigo/index.html, home automation software for macs!
 
 h2. example
 
-!http://img.skitch.com/20081018-cpe962b2pbb2mjwp3p7fxshpdp.png!<br />iphone view
+h4{float:left}. !http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg!<br />iphone view
 
-!http://img.skitch.com/20081018-tdk7ekuyegxs789exw24rfg3ds.png!<br />original view
+h4{float:left}. !http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!<br />desktop app
 
-h2. installation
+h2{clear:all}. installation
 
 h3. 1) download new web files
 
 h4. as zip file:
 
-* "download the .zip file":http://github.com/seaofclouds/indigo-mini-view-plugin/zipball/master
+* *"download the .zip file":http://github.com/seaofclouds/indigo-mini-view-plugin/zipball/master*
 * expand download
 * rename expanded directory to: "m"
 * move "m" to 
@@ -38,18 +38,6 @@ h3. 3) control your home
 
 h2. customization
 
-h3. create a mini desktop app with fluid
-
-!http://img.skitch.com/20081023-mc22y5bdxnhinesb1ey1ds4d34.png!
-
-* install "fluid.app":http://fluidapp.com/
-* create a new SSB for your control server
-* copy and paste the stylesheet FROM: 
-  <pre>cd /Library/"Application Support"/"Perceptive Automation"/"Indigo 2"/IndigoWebServer/m/css/mini-fluid.css</pre>
-   TO the Userstyles option in your new SSB's preferences.
-
-more information about fluid at: "http://fluidapp.com/":http://fluidapp.com/ and similar instructions for customizing userstyles at: "http://code.google.com/p/darkbutgood/wiki/HowToInstallDarkButGood":http://code.google.com/p/darkbutgood/wiki/HowToInstallDarkButGood
-
 h3. replace the iphone icon
 
 !http://img.skitch.com/20081020-ddke2pitkd6qpkrtrn3shi9ji.png!
@@ -61,6 +49,18 @@ i added three replacement icons, green, blue and grey, with grey being the defau
 if you want the indigo default icon back, change that same line to:
 
 <pre><link href='/apple-touch-icon.png' rel='apple-touch-icon' /></pre>
+
+h3. create a mini desktop app with fluid
+
+!http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!
+
+* install "fluid.app":http://fluidapp.com/
+* create a new SSB for your control server
+* copy and paste the stylesheet FROM: 
+  <pre>cd /Library/"Application Support"/"Perceptive Automation"/"Indigo 2"/IndigoWebServer/m/css/mini-fluid.css</pre>
+   TO the Userstyles option in your new SSB's preferences.
+
+more information about fluid at: "http://fluidapp.com/":http://fluidapp.com/ and similar instructions for customizing userstyles at: "http://code.google.com/p/darkbutgood/wiki/HowToInstallDarkButGood":http://code.google.com/p/darkbutgood/wiki/HowToInstallDarkButGood
 
 h2. contribute
 

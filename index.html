@@ -53,7 +53,8 @@
   <body>
     <a name="header"></a>
     <div id="header">
-      <a href="/" class="mainpage">&laquo; main page</a>
+      <a class="fl" href="/" class="mainpage">&laquo; indigo</a>
+      <a class="fr" href="javascript:location.reload(true)">refresh</a>
     </div>
     <div id="content">
       #include "plugins/m/_deviceList.html"
@@ -64,13 +65,16 @@
     
     <div id="footer">
       <div class="fl">
-        <a href="/" class="mainpage">&laquo; main page</a>
+        <a href="/" class="mainpage">&laquo; indigo</a>
         <a class="restart" href="/indigocommand?name=restart">restart</a>
         <div class="clear"></div>
       </div>
-      #unless $iphone
-        <a class="fr backtotop" href="#header">back to top</a>
-      #end unless
+      <div class="fr">
+        <a href="javascript:location.reload(true)">refresh</a>
+        #unless $iphone
+          <a class="backtotop" href="#header">back to top</a>
+        #end unless
+      </div>
       <div class="clear"></div>
     </div>
     <iframe name="ifAction" id="ifAction" style="display:none"/>

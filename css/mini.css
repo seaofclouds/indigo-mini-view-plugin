@@ -65,7 +65,7 @@ p.contribute a {
 .fl {
   float:left;
 }
-.fr, #footer a.fr {
+.fr, #footer a.fr, #header a.fr {
   float:right;
 }
  

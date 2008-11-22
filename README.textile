@@ -2,8 +2,8 @@ h3{font-weight:normal !important;}. born from the need for quick loads and simpl
 
 h2. example
 
-|_. *iphone view* |_. *fluid desktop app* |
-| !http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg! | !http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png! |
+|_.iphone view|_.fluid desktop app|
+|!http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg!| !http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!|
 
 h2. installation
 

@@ -2,9 +2,13 @@ h3{font-weight:normal !important;}. born from the need for quick loads and simpl
 
 h2. example
 
-h4{float:left !important;width:330px !important}. !http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg!<br />iphone view
+<div style="float:left !important;width:330px !important">
+!http://farm4.static.flickr.com/3200/3050351589_5d53ca7903_o.jpg!<br />iphone view
+</div>
 
-h4{float:left !important;width:330px !important}. !http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!<br />fluid desktop app
+<div style="float:left !important;width:330px !important">
+!http://img.skitch.com/20081122-qda98w4uatj896dnphsh9t8suj.png!<br />fluid desktop app 
+</div>
 
 h2{clear:all}. installation
 

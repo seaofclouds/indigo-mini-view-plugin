@@ -11,8 +11,9 @@
       #set $cellColorClass = u'darkRowBg'
     #end if
     <h3 class="action $cellColorClass">
-      <a class="button" href="executegroup?group=${actionGroup.name, entityEncoding='URL'}"><span class="actionGroupName">$actionGroup.name</span></a>
+      <a class="button" href="javascript:ActionGroup('$actionGroup.name');"><span class="actionGroupName">$actionGroup.name</span></a>
     </h3>
   #end for
   <div class="clear"></div>
 </div>
+

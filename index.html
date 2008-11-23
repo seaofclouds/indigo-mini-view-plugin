@@ -21,6 +21,9 @@
         var el = document.getElementById(obj);
         el.style.display = (el.style.display != 'none' ? 'none' : '' );
       }
+      function ActionGroup(actiongroupname) {
+         document.getElementById('ifAction').src = "executegroup?group=" + actiongroupname;
+		 }
       function SwitchLights(devname,State) {
         if (State>0) {
           document.getElementById('ifAction').src = "turnon?device=" + devname;
@@ -54,8 +57,9 @@
     <a name="header"></a>
     <div id="header">
       <a class="fl" href="/" class="mainpage">&laquo; indigo</a>
-      <a class="fr" href="javascript:location.reload(true)">refresh</a>
+      <a class="fr" href="javascript:window.location.href=window.location.href">refresh</a>
     </div>
+    <br/>
     <div id="content">
       #include "plugins/m/_deviceList.html"
       #include "plugins/m/_actiongroupList.html"    
@@ -70,7 +74,7 @@
         <div class="clear"></div>
       </div>
       <div class="fr">
-        <a href="javascript:location.reload(true)">refresh</a>
+        <a href="javascript:window.location.href=window.location.href">refresh</a>
         #unless $iphone
           <a class="backtotop" href="#header">back to top</a>
         #end unless

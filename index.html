@@ -23,7 +23,7 @@
       }
       function ActionGroup(actiongroupname) {
          document.getElementById('ifAction').src = "executegroup?group=" + actiongroupname;
-		 }
+     }
       function SwitchLights(devname,State) {
         if (State>0) {
           document.getElementById('ifAction').src = "turnon?device=" + devname;
@@ -58,11 +58,11 @@
     <div id="header">
       <a class="fl" href="/" class="mainpage">&laquo; indigo</a>
       <a class="fr" href="javascript:window.location.href=window.location.href">refresh</a>
+      <div class="clear"</div>>
     </div>
-    <br/>
     <div id="content">
       #include "plugins/m/_deviceList.html"
-      #include "plugins/m/_actiongroupList.html"    
+      #include "plugins/m/_actiongroupList.html"
       #include "plugins/m/_variableList.html"
     </div>
     <p class="contribute"><a href="http://github.com/seaofclouds/indigo-mini-view-plugin/">contribute on github</a></p>
